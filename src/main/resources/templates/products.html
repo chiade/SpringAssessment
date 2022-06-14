@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>TODOLIST</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<!-- need to insert the navbar fragment here -->
+<div th:insert="fragments/navbar.html :: navbar"></div>
+
+<div class="jumbotron">
+    <h1 class="display-4">TODO LIST</h1>
+    <div id="list-items">
+        <div id='row' class="row">
+
+            <!-- <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Target Date</th>
+                </tr>
+                <tr>
+                     <td>Run Errands</td>
+                     <td>To buy Kuih Lapis for family, and Jean and Bryan</td>
+                     <td>05/06/2021</td>
+                 </tr>
+                 <tr>
+                     <td>JFSD Project Task</td>
+                     <td>Complete Frontend and Backend structure for JFSD course</td>
+                     <td>28/05/2021</td>
+                 </tr>
+                 <tr>
+                     <td>JFSD Portfolio</td>
+                     <td>To complete my Portfolio and upload to Github</td>
+                     <td>30/05/2021</td>
+                 </tr>
+ </table>-->
+
+        </div>  <!-- End of row -->
+    </div> <!-- End of List item div -->
+</div>  <!-- End of Jumbotron div -->
+
+
+<!-- need to insert footer fragment here -->
+<div th:insert="fragments/footer.html :: footer"></div>
+
+<!-- SCRIPTS AND STYLES-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--<link href="css/styles.css" rel="stylesheet">-->
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<script src="js/productController.js"></script>
+<script src="js/productListing.js"></script>
+
+</body>
+</html>
